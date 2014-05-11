@@ -77,7 +77,7 @@ axis(side = 1, at = c(mn, mx/2, mx), labels = c("Thu", "Fri", "Sat"))
 ## bottomright: Global_reactive_power vs. datetime
 plot(x = myData$datetime, y = myData$Global_reactive_power, 
      type = "l", xaxt = "n",
-     ylab = "Global_reactive_power",xlab = "", cex.lab = 0.8)
+     ylab = "Global_reactive_power", xlab = "datetime", cex.lab = 0.8)
 mn <- range(myData$datetime)[1]
 mx <- range(myData$datetime)[2]
 axis(side = 1, at = c(mn, mx/2, mx), labels = c("Thu", "Fri", "Sat"))
@@ -89,3 +89,4 @@ par(mfrow = c(1, 1))
 ## default PNG file with a width of 480 pixels and a height of 
 ## 480 pixels
 ?png
+
